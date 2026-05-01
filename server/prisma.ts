@@ -1,8 +1,6 @@
+import "dotenv/config";
 import {PrismaPg} from "@prisma/adapter-pg";
-
-// According to the official Prisma documentation the import path should be "@prisma/client"
-// but it is not recognized by the TypeScript compiler. Regenerating does not help
-import {PrismaClient} from "@prisma/client/extension";
+import {PrismaClient} from "@/generated/prisma/client";
 
 export class DB_Connection {
     public getClient(): PrismaClient {
