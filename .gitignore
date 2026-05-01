@@ -1,5 +1,19 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# IDE generated
+.idea
+.vscode
+.vsconfig
+.vs
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+
 # dependencies
 /node_modules
 /.pnp
@@ -39,3 +53,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/generated/prisma
